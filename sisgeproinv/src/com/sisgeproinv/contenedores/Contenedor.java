@@ -5,6 +5,10 @@
  */
 package com.sisgeproinv.contenedores;
 
+import com.sisgeproinv.accesos.Accesos;
+import com.sisgeproinv.accesos.Reportes;
+import com.sisgeproinv.controladores.ControladorContenedor;
+
 /**
  *
  * @author Alejandro Gonzalez
@@ -14,8 +18,15 @@ public class Contenedor extends javax.swing.JFrame {
     /**
      * Creates new form Contenedor
      */
+    
+    ControladorContenedor CC;
+    Accesos AC = new Accesos();
+    Reportes RP = new Reportes();
+    
     public Contenedor() {
         initComponents();
+        
+        CC = new ControladorContenedor(this, AC, RP);
     }
 
     /**
@@ -195,16 +206,7 @@ public class Contenedor extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 10)); // NOI18N
         jLabel3.setText("Version 1.0");
 
-        javax.swing.GroupLayout PanelContenedorModuloLayout = new javax.swing.GroupLayout(PanelContenedorModulo);
-        PanelContenedorModulo.setLayout(PanelContenedorModuloLayout);
-        PanelContenedorModuloLayout.setHorizontalGroup(
-            PanelContenedorModuloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        PanelContenedorModuloLayout.setVerticalGroup(
-            PanelContenedorModuloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 532, Short.MAX_VALUE)
-        );
+        PanelContenedorModulo.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout PanelPrincipalLayout = new javax.swing.GroupLayout(PanelPrincipal);
         PanelPrincipal.setLayout(PanelPrincipalLayout);

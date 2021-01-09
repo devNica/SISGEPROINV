@@ -31,18 +31,16 @@ public class Accesos extends javax.swing.JPanel {
         IconoPrincipal = new javax.swing.JLabel();
         TituloPrincipal = new javax.swing.JLabel();
         IconoSecundario = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        IconoCantidadUPS = new javax.swing.JLabel();
+        IconoCantidadOrdenadores = new javax.swing.JLabel();
+        IconoCantidadImpresoras = new javax.swing.JLabel();
         InventarioEquiposAcceso = new javax.swing.JPanel();
         IconoPrincipal1 = new javax.swing.JLabel();
         TituloPrincipal1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-
-        setBackground(new java.awt.Color(232, 228, 237));
+        IconoEqpActivos = new javax.swing.JLabel();
+        EtiquetaPorcentajeActivos = new javax.swing.JLabel();
+        IconoEqpInactivos = new javax.swing.JLabel();
+        EtiquetaPorcentajeInactivos = new javax.swing.JLabel();
 
         RegistroEquiposAcceso.setBackground(new java.awt.Color(255, 255, 255));
         RegistroEquiposAcceso.setPreferredSize(new java.awt.Dimension(310, 120));
@@ -66,20 +64,20 @@ public class Accesos extends javax.swing.JPanel {
         IconoSecundario.setOpaque(true);
         RegistroEquiposAcceso.add(IconoSecundario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 60, 50));
 
-        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/bateriaN20.png"))); // NOI18N
-        jLabel5.setText(">> 23.6% <<");
-        RegistroEquiposAcceso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
+        IconoCantidadUPS.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        IconoCantidadUPS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/bateriaN20.png"))); // NOI18N
+        IconoCantidadUPS.setText(">> 23.6% <<");
+        RegistroEquiposAcceso.add(IconoCantidadUPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/cpuN20.png"))); // NOI18N
-        jLabel6.setText(">> 27.5% <<");
-        RegistroEquiposAcceso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, -1));
+        IconoCantidadOrdenadores.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        IconoCantidadOrdenadores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/cpuN20.png"))); // NOI18N
+        IconoCantidadOrdenadores.setText(">> 27.5% <<");
+        RegistroEquiposAcceso.add(IconoCantidadOrdenadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/impresoraN20.png"))); // NOI18N
-        jLabel7.setText(">> 14.8% <<");
-        RegistroEquiposAcceso.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
+        IconoCantidadImpresoras.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        IconoCantidadImpresoras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/impresoraN20.png"))); // NOI18N
+        IconoCantidadImpresoras.setText(">> 14.8% <<");
+        RegistroEquiposAcceso.add(IconoCantidadImpresoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, -1, -1));
 
         InventarioEquiposAcceso.setBackground(new java.awt.Color(255, 255, 255));
         InventarioEquiposAcceso.setPreferredSize(new java.awt.Dimension(310, 120));
@@ -97,27 +95,27 @@ public class Accesos extends javax.swing.JPanel {
         TituloPrincipal1.setText("INVENTARIO EQUIPOS");
         InventarioEquiposAcceso.add(TituloPrincipal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 200, -1));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(49, 75, 212));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/equipoN20.png"))); // NOI18N
-        jLabel1.setText("EQUIPOS ACTIVOS");
-        InventarioEquiposAcceso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
+        IconoEqpActivos.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        IconoEqpActivos.setForeground(new java.awt.Color(49, 75, 212));
+        IconoEqpActivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/equipoN20.png"))); // NOI18N
+        IconoEqpActivos.setText("EQUIPOS ACTIVOS");
+        InventarioEquiposAcceso.add(IconoEqpActivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 15)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel2.setText("85.7%");
-        InventarioEquiposAcceso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, 20));
+        EtiquetaPorcentajeActivos.setFont(new java.awt.Font("Calibri", 1, 15)); // NOI18N
+        EtiquetaPorcentajeActivos.setForeground(new java.awt.Color(51, 51, 51));
+        EtiquetaPorcentajeActivos.setText("85.7%");
+        InventarioEquiposAcceso.add(EtiquetaPorcentajeActivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, 20));
 
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(219, 38, 79));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/equipoN20.png"))); // NOI18N
-        jLabel3.setText("EQUIPOS INACTIVOS");
-        InventarioEquiposAcceso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+        IconoEqpInactivos.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        IconoEqpInactivos.setForeground(new java.awt.Color(219, 38, 79));
+        IconoEqpInactivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/equipoN20.png"))); // NOI18N
+        IconoEqpInactivos.setText("EQUIPOS INACTIVOS");
+        InventarioEquiposAcceso.add(IconoEqpInactivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Calibri", 1, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("14.3%");
-        InventarioEquiposAcceso.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, 20));
+        EtiquetaPorcentajeInactivos.setFont(new java.awt.Font("Calibri", 1, 15)); // NOI18N
+        EtiquetaPorcentajeInactivos.setForeground(new java.awt.Color(51, 51, 51));
+        EtiquetaPorcentajeInactivos.setText("14.3%");
+        InventarioEquiposAcceso.add(EtiquetaPorcentajeInactivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -143,6 +141,13 @@ public class Accesos extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel EtiquetaPorcentajeActivos;
+    private javax.swing.JLabel EtiquetaPorcentajeInactivos;
+    private javax.swing.JLabel IconoCantidadImpresoras;
+    private javax.swing.JLabel IconoCantidadOrdenadores;
+    private javax.swing.JLabel IconoCantidadUPS;
+    private javax.swing.JLabel IconoEqpActivos;
+    private javax.swing.JLabel IconoEqpInactivos;
     private javax.swing.JLabel IconoPrincipal;
     private javax.swing.JLabel IconoPrincipal1;
     private javax.swing.JLabel IconoSecundario;
@@ -150,12 +155,5 @@ public class Accesos extends javax.swing.JPanel {
     public javax.swing.JPanel RegistroEquiposAcceso;
     private javax.swing.JLabel TituloPrincipal;
     private javax.swing.JLabel TituloPrincipal1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }
