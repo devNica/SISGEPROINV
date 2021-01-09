@@ -28,31 +28,69 @@ public class Contenedor extends javax.swing.JFrame {
     private void initComponents() {
 
         PanelCabezera = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        EtiquetaIconoUsuario = new javax.swing.JLabel();
+        EtiquetaUsuario = new javax.swing.JLabel();
         PanelMenu = new javax.swing.JPanel();
-        EtiquetaIconoUsuarioMenu = new javax.swing.JLabel();
         EtiquetaEstadoMenu = new javax.swing.JLabel();
-        EtiquetaUsuarioMenu = new javax.swing.JLabel();
         SeparadorMenu = new javax.swing.JSeparator();
         BotonReportes = new javax.swing.JLabel();
         BotonModulos = new javax.swing.JLabel();
+        EtiquetaIconoUsuarioMenu = new javax.swing.JLabel();
+        EtiquetaRolMenu = new javax.swing.JLabel();
         PanelInferior = new javax.swing.JPanel();
         EtiquetaCredito = new javax.swing.JLabel();
         PanelPrincipal = new javax.swing.JPanel();
+        PanelRuta = new javax.swing.JPanel();
+        EtiquetaIconoRuta = new javax.swing.JLabel();
+        EtiquetaModuloRuta = new javax.swing.JLabel();
+        EtiquetaSubModuloRuta = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        PanelContenedorModulo = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         PanelCabezera.setBackground(new java.awt.Color(0, 77, 131));
         PanelCabezera.setPreferredSize(new java.awt.Dimension(873, 40));
 
+        jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 19)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("QBD");
+
+        EtiquetaIconoUsuario.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        EtiquetaIconoUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaIconoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioBlanco26.png"))); // NOI18N
+
+        EtiquetaUsuario.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
+        EtiquetaUsuario.setForeground(new java.awt.Color(249, 247, 247));
+        EtiquetaUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaUsuario.setText("LMARSELL");
+        EtiquetaUsuario.setToolTipText("");
+
         javax.swing.GroupLayout PanelCabezeraLayout = new javax.swing.GroupLayout(PanelCabezera);
         PanelCabezera.setLayout(PanelCabezeraLayout);
         PanelCabezeraLayout.setHorizontalGroup(
             PanelCabezeraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1163, Short.MAX_VALUE)
+            .addGroup(PanelCabezeraLayout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 861, Short.MAX_VALUE)
+                .addComponent(EtiquetaIconoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(EtiquetaUsuario)
+                .addContainerGap())
         );
         PanelCabezeraLayout.setVerticalGroup(
             PanelCabezeraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelCabezeraLayout.createSequentialGroup()
+                .addComponent(EtiquetaIconoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(PanelCabezeraLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(EtiquetaUsuario)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(PanelCabezera, java.awt.BorderLayout.PAGE_START);
@@ -61,39 +99,39 @@ public class Contenedor extends javax.swing.JFrame {
         PanelMenu.setPreferredSize(new java.awt.Dimension(190, 607));
         PanelMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        EtiquetaIconoUsuarioMenu.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        EtiquetaIconoUsuarioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EtiquetaIconoUsuarioMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioBlanco26.png"))); // NOI18N
-        PanelMenu.add(EtiquetaIconoUsuarioMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 40, 40));
-
         EtiquetaEstadoMenu.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         EtiquetaEstadoMenu.setForeground(new java.awt.Color(51, 255, 51));
         EtiquetaEstadoMenu.setText("ONLINE");
         EtiquetaEstadoMenu.setToolTipText("");
-        PanelMenu.add(EtiquetaEstadoMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 120, -1));
-
-        EtiquetaUsuarioMenu.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
-        EtiquetaUsuarioMenu.setForeground(new java.awt.Color(249, 247, 247));
-        EtiquetaUsuarioMenu.setText("LMARSELL");
-        EtiquetaUsuarioMenu.setToolTipText("");
-        PanelMenu.add(EtiquetaUsuarioMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 120, -1));
+        PanelMenu.add(EtiquetaEstadoMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 120, -1));
 
         SeparadorMenu.setBackground(new java.awt.Color(74, 84, 109));
         SeparadorMenu.setForeground(new java.awt.Color(74, 84, 109));
         SeparadorMenu.setOpaque(true);
-        PanelMenu.add(SeparadorMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 170, 5));
+        PanelMenu.add(SeparadorMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 170, 5));
 
         BotonReportes.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         BotonReportes.setForeground(new java.awt.Color(255, 255, 255));
         BotonReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/reporte25.png"))); // NOI18N
         BotonReportes.setText("Reportes");
-        PanelMenu.add(BotonReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, 30));
+        PanelMenu.add(BotonReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 170, 30));
 
         BotonModulos.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         BotonModulos.setForeground(new java.awt.Color(255, 255, 255));
         BotonModulos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/modulo25.png"))); // NOI18N
         BotonModulos.setText("Modulos");
-        PanelMenu.add(BotonModulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 170, 30));
+        PanelMenu.add(BotonModulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 170, 30));
+
+        EtiquetaIconoUsuarioMenu.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        EtiquetaIconoUsuarioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EtiquetaIconoUsuarioMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioBlanco26.png"))); // NOI18N
+        PanelMenu.add(EtiquetaIconoUsuarioMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 40, 40));
+
+        EtiquetaRolMenu.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
+        EtiquetaRolMenu.setForeground(new java.awt.Color(249, 247, 247));
+        EtiquetaRolMenu.setText("ADMINISTRADOR");
+        EtiquetaRolMenu.setToolTipText("");
+        PanelMenu.add(EtiquetaRolMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, -1));
 
         getContentPane().add(PanelMenu, java.awt.BorderLayout.LINE_START);
 
@@ -120,15 +158,82 @@ public class Contenedor extends javax.swing.JFrame {
 
         PanelPrincipal.setBackground(new java.awt.Color(255, 255, 255));
 
+        EtiquetaIconoRuta.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        EtiquetaIconoRuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/moduloN20.png"))); // NOI18N
+        EtiquetaIconoRuta.setText("Modulo >");
+
+        EtiquetaModuloRuta.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        EtiquetaModuloRuta.setText("Nombre del Modulo >");
+
+        EtiquetaSubModuloRuta.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        EtiquetaSubModuloRuta.setText("Nombre del Sub Modulo");
+
+        javax.swing.GroupLayout PanelRutaLayout = new javax.swing.GroupLayout(PanelRuta);
+        PanelRuta.setLayout(PanelRutaLayout);
+        PanelRutaLayout.setHorizontalGroup(
+            PanelRutaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelRutaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(EtiquetaIconoRuta)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(EtiquetaModuloRuta)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(EtiquetaSubModuloRuta)
+                .addContainerGap(605, Short.MAX_VALUE))
+        );
+        PanelRutaLayout.setVerticalGroup(
+            PanelRutaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelRutaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(EtiquetaIconoRuta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(EtiquetaModuloRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(EtiquetaSubModuloRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLabel2.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 18)); // NOI18N
+        jLabel2.setText("sisgeproinv");
+
+        jLabel3.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 10)); // NOI18N
+        jLabel3.setText("Version 1.0");
+
+        javax.swing.GroupLayout PanelContenedorModuloLayout = new javax.swing.GroupLayout(PanelContenedorModulo);
+        PanelContenedorModulo.setLayout(PanelContenedorModuloLayout);
+        PanelContenedorModuloLayout.setHorizontalGroup(
+            PanelContenedorModuloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        PanelContenedorModuloLayout.setVerticalGroup(
+            PanelContenedorModuloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout PanelPrincipalLayout = new javax.swing.GroupLayout(PanelPrincipal);
         PanelPrincipal.setLayout(PanelPrincipalLayout);
         PanelPrincipalLayout.setHorizontalGroup(
             PanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 973, Short.MAX_VALUE)
+            .addGroup(PanelPrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PanelRuta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(PanelPrincipalLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(PanelContenedorModulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         PanelPrincipalLayout.setVerticalGroup(
             PanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 642, Short.MAX_VALUE)
+            .addGroup(PanelPrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PanelRuta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(PanelContenedorModulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         getContentPane().add(PanelPrincipal, java.awt.BorderLayout.CENTER);
@@ -175,13 +280,23 @@ public class Contenedor extends javax.swing.JFrame {
     public javax.swing.JLabel BotonModulos;
     public javax.swing.JLabel BotonReportes;
     private javax.swing.JLabel EtiquetaCredito;
-    private javax.swing.JLabel EtiquetaEstadoMenu;
+    public javax.swing.JLabel EtiquetaEstadoMenu;
+    private javax.swing.JLabel EtiquetaIconoRuta;
+    private javax.swing.JLabel EtiquetaIconoUsuario;
     private javax.swing.JLabel EtiquetaIconoUsuarioMenu;
-    private javax.swing.JLabel EtiquetaUsuarioMenu;
+    private javax.swing.JLabel EtiquetaModuloRuta;
+    public javax.swing.JLabel EtiquetaRolMenu;
+    private javax.swing.JLabel EtiquetaSubModuloRuta;
+    public javax.swing.JLabel EtiquetaUsuario;
     private javax.swing.JPanel PanelCabezera;
+    private javax.swing.JPanel PanelContenedorModulo;
     private javax.swing.JPanel PanelInferior;
     public javax.swing.JPanel PanelMenu;
     public javax.swing.JPanel PanelPrincipal;
+    private javax.swing.JPanel PanelRuta;
     private javax.swing.JSeparator SeparadorMenu;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
