@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sisgeproinv.formularios;
+package com.sisgeproinv.contenedores;
 
 /**
  *
@@ -61,7 +61,7 @@ public class Contenedor extends javax.swing.JFrame {
 
         EtiquetaIconoUsuario.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         EtiquetaIconoUsuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EtiquetaIconoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioBlanco26.png"))); // NOI18N
+        EtiquetaIconoUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioB26.png"))); // NOI18N
 
         EtiquetaUsuario.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         EtiquetaUsuario.setForeground(new java.awt.Color(249, 247, 247));
@@ -118,13 +118,13 @@ public class Contenedor extends javax.swing.JFrame {
 
         BotonModulos.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 14)); // NOI18N
         BotonModulos.setForeground(new java.awt.Color(255, 255, 255));
-        BotonModulos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/modulo25.png"))); // NOI18N
+        BotonModulos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/moduloB25.png"))); // NOI18N
         BotonModulos.setText("Modulos");
         PanelMenu.add(BotonModulos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 170, 30));
 
         EtiquetaIconoUsuarioMenu.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         EtiquetaIconoUsuarioMenu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EtiquetaIconoUsuarioMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioBlanco26.png"))); // NOI18N
+        EtiquetaIconoUsuarioMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/usuarioB26.png"))); // NOI18N
         PanelMenu.add(EtiquetaIconoUsuarioMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 40, 40));
 
         EtiquetaRolMenu.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
@@ -289,7 +289,7 @@ public class Contenedor extends javax.swing.JFrame {
     private javax.swing.JLabel EtiquetaSubModuloRuta;
     public javax.swing.JLabel EtiquetaUsuario;
     private javax.swing.JPanel PanelCabezera;
-    private javax.swing.JPanel PanelContenedorModulo;
+    public javax.swing.JPanel PanelContenedorModulo;
     private javax.swing.JPanel PanelInferior;
     public javax.swing.JPanel PanelMenu;
     public javax.swing.JPanel PanelPrincipal;

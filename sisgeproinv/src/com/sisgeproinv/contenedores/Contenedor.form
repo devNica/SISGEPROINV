@@ -86,7 +86,7 @@
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/sisgeproinv/iconos/usuarioBlanco26.png"/>
+              <Image iconType="3" name="/com/sisgeproinv/iconos/usuarioB26.png"/>
             </Property>
           </Properties>
         </Component>
@@ -197,7 +197,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/sisgeproinv/iconos/modulo25.png"/>
+              <Image iconType="3" name="/com/sisgeproinv/iconos/moduloB25.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Modulos"/>
           </Properties>
@@ -217,7 +217,7 @@
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/sisgeproinv/iconos/usuarioBlanco26.png"/>
+              <Image iconType="3" name="/com/sisgeproinv/iconos/usuarioB26.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -415,6 +415,9 @@
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="PanelContenedorModulo">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
