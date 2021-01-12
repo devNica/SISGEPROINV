@@ -7,6 +7,7 @@ package com.sisgeproinv.contenedores;
 
 import com.sisgeproinv.accesos.Accesos;
 import com.sisgeproinv.accesos.Reportes;
+import com.sisgeproinv.controladores.ControladorAcceso;
 import com.sisgeproinv.controladores.ControladorContenedor;
 
 /**
@@ -19,14 +20,17 @@ public class Contenedor extends javax.swing.JFrame {
      * Creates new form Contenedor
      */
     
-    ControladorContenedor CC;
+    ControladorContenedor CtrlContenedor;
+    ControladorAcceso CtrlAcceso;
+    
     Accesos AC = new Accesos();
     Reportes RP = new Reportes();
     
     public Contenedor() {
         initComponents();
         
-        CC = new ControladorContenedor(this, AC, RP);
+        CtrlContenedor = new ControladorContenedor(this, AC, RP);
+        CtrlAcceso = new ControladorAcceso(this, AC);
     }
 
     /**
@@ -286,9 +290,9 @@ public class Contenedor extends javax.swing.JFrame {
     private javax.swing.JLabel EtiquetaIconoRuta;
     private javax.swing.JLabel EtiquetaIconoUsuario;
     private javax.swing.JLabel EtiquetaIconoUsuarioMenu;
-    private javax.swing.JLabel EtiquetaModuloRuta;
+    public javax.swing.JLabel EtiquetaModuloRuta;
     public javax.swing.JLabel EtiquetaRolMenu;
-    private javax.swing.JLabel EtiquetaSubModuloRuta;
+    public javax.swing.JLabel EtiquetaSubModuloRuta;
     public javax.swing.JLabel EtiquetaUsuario;
     private javax.swing.JPanel PanelCabezera;
     public javax.swing.JPanel PanelContenedorModulo;

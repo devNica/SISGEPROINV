@@ -35,12 +35,18 @@ public class Accesos extends javax.swing.JPanel {
         IconoCantidadOrdenadores = new javax.swing.JLabel();
         IconoCantidadImpresoras = new javax.swing.JLabel();
         InventarioEquiposAcceso = new javax.swing.JPanel();
-        IconoPrincipal1 = new javax.swing.JLabel();
-        TituloPrincipal1 = new javax.swing.JLabel();
+        IconoPrincipalInv = new javax.swing.JLabel();
+        TituloPrincipalInv = new javax.swing.JLabel();
         IconoEqpActivos = new javax.swing.JLabel();
         EtiquetaPorcentajeActivos = new javax.swing.JLabel();
         IconoEqpInactivos = new javax.swing.JLabel();
         EtiquetaPorcentajeInactivos = new javax.swing.JLabel();
+        Catalogos = new javax.swing.JPanel();
+        IconoPrincipalCatalogo = new javax.swing.JLabel();
+        TituloPrincipalCatalogo = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         RegistroEquiposAcceso.setBackground(new java.awt.Color(255, 255, 255));
         RegistroEquiposAcceso.setPreferredSize(new java.awt.Dimension(310, 120));
@@ -83,17 +89,17 @@ public class Accesos extends javax.swing.JPanel {
         InventarioEquiposAcceso.setPreferredSize(new java.awt.Dimension(310, 120));
         InventarioEquiposAcceso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        IconoPrincipal1.setBackground(new java.awt.Color(255, 51, 102));
-        IconoPrincipal1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        IconoPrincipal1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/inventarioB96.png"))); // NOI18N
-        IconoPrincipal1.setOpaque(true);
-        InventarioEquiposAcceso.add(IconoPrincipal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 130));
+        IconoPrincipalInv.setBackground(new java.awt.Color(255, 51, 102));
+        IconoPrincipalInv.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        IconoPrincipalInv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/inventarioB96.png"))); // NOI18N
+        IconoPrincipalInv.setOpaque(true);
+        InventarioEquiposAcceso.add(IconoPrincipalInv, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 130));
 
-        TituloPrincipal1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        TituloPrincipal1.setForeground(new java.awt.Color(27, 30, 33));
-        TituloPrincipal1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        TituloPrincipal1.setText("INVENTARIO EQUIPOS");
-        InventarioEquiposAcceso.add(TituloPrincipal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 200, -1));
+        TituloPrincipalInv.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        TituloPrincipalInv.setForeground(new java.awt.Color(27, 30, 33));
+        TituloPrincipalInv.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TituloPrincipalInv.setText("INVENTARIO EQUIPOS");
+        InventarioEquiposAcceso.add(TituloPrincipalInv, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 200, -1));
 
         IconoEqpActivos.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         IconoEqpActivos.setForeground(new java.awt.Color(49, 75, 212));
@@ -117,6 +123,40 @@ public class Accesos extends javax.swing.JPanel {
         EtiquetaPorcentajeInactivos.setText("14.3%");
         InventarioEquiposAcceso.add(EtiquetaPorcentajeInactivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, 20));
 
+        Catalogos.setBackground(new java.awt.Color(255, 255, 255));
+        Catalogos.setPreferredSize(new java.awt.Dimension(310, 120));
+        Catalogos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        IconoPrincipalCatalogo.setBackground(new java.awt.Color(57, 191, 102));
+        IconoPrincipalCatalogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        IconoPrincipalCatalogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/catalogoB96.png"))); // NOI18N
+        IconoPrincipalCatalogo.setOpaque(true);
+        Catalogos.add(IconoPrincipalCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 130));
+
+        TituloPrincipalCatalogo.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        TituloPrincipalCatalogo.setForeground(new java.awt.Color(27, 30, 33));
+        TituloPrincipalCatalogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TituloPrincipalCatalogo.setText("CATALOGOS");
+        Catalogos.add(TituloPrincipalCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 200, -1));
+
+        jLabel1.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/catalogoN20.png"))); // NOI18N
+        jLabel1.setText(">> Dispositivos");
+        Catalogos.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 120, -1));
+
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/catalogoN20.png"))); // NOI18N
+        jLabel2.setText(">> Modelos");
+        Catalogos.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 100, -1));
+
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sisgeproinv/iconos/catalogoN20.png"))); // NOI18N
+        jLabel3.setText(">> Equipos");
+        Catalogos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -124,23 +164,28 @@ public class Accesos extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(RegistroEquiposAcceso, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
+                .addGap(60, 60, 60)
                 .addComponent(InventarioEquiposAcceso, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(Catalogos, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(RegistroEquiposAcceso, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InventarioEquiposAcceso, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Catalogos, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(RegistroEquiposAcceso, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(InventarioEquiposAcceso, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)))
                 .addContainerGap(458, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JPanel Catalogos;
     private javax.swing.JLabel EtiquetaPorcentajeActivos;
     private javax.swing.JLabel EtiquetaPorcentajeInactivos;
     private javax.swing.JLabel IconoCantidadImpresoras;
@@ -149,11 +194,16 @@ public class Accesos extends javax.swing.JPanel {
     private javax.swing.JLabel IconoEqpActivos;
     private javax.swing.JLabel IconoEqpInactivos;
     private javax.swing.JLabel IconoPrincipal;
-    private javax.swing.JLabel IconoPrincipal1;
+    private javax.swing.JLabel IconoPrincipalCatalogo;
+    private javax.swing.JLabel IconoPrincipalInv;
     private javax.swing.JLabel IconoSecundario;
     public javax.swing.JPanel InventarioEquiposAcceso;
     public javax.swing.JPanel RegistroEquiposAcceso;
     private javax.swing.JLabel TituloPrincipal;
-    private javax.swing.JLabel TituloPrincipal1;
+    private javax.swing.JLabel TituloPrincipalCatalogo;
+    private javax.swing.JLabel TituloPrincipalInv;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

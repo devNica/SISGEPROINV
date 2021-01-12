@@ -387,6 +387,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nombre del Modulo &gt;"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="EtiquetaSubModuloRuta">
               <Properties>
@@ -395,6 +398,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Nombre del Sub Modulo"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

@@ -36,20 +36,19 @@ public class ControladorContenedor {
     
     private void mostrarModulos(){
         FC.PanelContenedorModulo.add(AC);
+        FC.PanelContenedorModulo.remove(RP);
         AC.setVisible(true);
-        RP.setVisible(false);
         FC.revalidate();
         FC.repaint();
     }
     
     private void mostrarReportes(){
         FC.PanelContenedorModulo.add(RP);
-        AC.setVisible(false);
+        FC.PanelContenedorModulo.remove(AC);
         RP.setVisible(true);
         FC.revalidate();
         FC.repaint();
     }
-    
     
     private class EventosMouse extends MouseAdapter{
         
@@ -69,6 +68,7 @@ public class ControladorContenedor {
             FC.BotonReportes.setCursor(new Cursor(Cursor.HAND_CURSOR));
             AC.RegistroEquiposAcceso.setCursor(new Cursor(Cursor.HAND_CURSOR));
             AC.InventarioEquiposAcceso.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            AC.Catalogos.setCursor(new Cursor(Cursor.HAND_CURSOR));
         }
     
     }
